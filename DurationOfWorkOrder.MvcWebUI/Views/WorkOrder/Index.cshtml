@@ -1,0 +1,60 @@
+﻿@using System.Text;
+@model DurationOfWorkOrder.MvcWebUI.Models.WorkOrderModel
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var totalDuration = 0;
+}
+
+<table class="table table-responsive table-bordered table-hover table-light">
+    <thead>
+        <tr>
+            <th>İşEmri</th>
+            @foreach (var workOrderHead in Model.WorkOrders)
+            {
+                <th>@workOrderHead.DurationName</th>
+            }
+            <th>Toplam</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var workOrderBody in Model.WorkOrders)
+        {
+            var duration = (workOrderBody.DurationEnd - workOrderBody.DurationStart).Minutes;
+            totalDuration += duration;
+            <tr>
+                <td>@workOrderBody.WorkOrderCode</td>
+                <td>@duration</td>
+                <td>@totalDuration</td>
+            </tr>
+        }
+    </tbody>
+
+    @*@{
+        var stringBuilder = new StringBuilder();
+        stringBuilder.AppendFormat("<thead>");
+        stringBuilder.AppendFormat("<tr>");
+        stringBuilder.AppendFormat("<th>İşEmri</th>");
+        @foreach (var workOrderHead in Model.WorkOrders)
+        {
+            stringBuilder.AppendFormat($"<th>{workOrderHead.DurationName}</th>");
+        }
+        stringBuilder.AppendFormat("<th>Toplam</th>");
+        stringBuilder.AppendFormat("</tr>");
+        stringBuilder.AppendFormat("</thead>");
+        stringBuilder.AppendFormat("<tbody>");
+        @foreach (var workOrderBody in Model.WorkOrders)
+        {
+            var duration = (workOrderBody.DurationEnd - workOrderBody.DurationStart).Minutes;
+            totalDuration += duration;
+            stringBuilder.AppendFormat("<tr>");
+            stringBuilder.AppendFormat($"<td>{workOrderBody.WorkOrderCode}</td>");
+            stringBuilder.AppendFormat($"<td>{duration}</td>");
+            stringBuilder.AppendFormat($"<td>{totalDuration}</td>");
+            stringBuilder.AppendFormat("</tr>");
+        }
+        stringBuilder.AppendFormat("<tbody>");
+        @Html.Raw(stringBuilder);
+    }*@
+
+</table>
