@@ -19,17 +19,25 @@ namespace DurationOfWorkOrder.WebAPI.Controllers
         public IActionResult GetWorkOrderWithDurations()
         {
             var workOrders = _workOrderService.GetAll();
-            foreach (var workOrder in workOrders)
+            int generalTotalDurations = 0;
+            int duration = 0;
+            var durations = new List<int>();
+            var totalDurations = new List<int>();
+            for (int i = 0; i < workOrders.Count; i++)
             {
-                var duration = (workOrder.DurationEnd - workOrder.DurationStart).Minutes;
-                workOrder.Durations?.Add(duration);
-                workOrder.TotalDurations?.Add(duration + workOrder.Durations[0]);
+                duration = (workOrders[i].DurationEnd - workOrders[i].DurationStart).Minutes;
+                durations.Add(duration);
+                totalDurations.Add(duration + durations[i]);
+                generalTotalDurations += totalDurations[i];
             }
-            var workOrderList = new WorkOrderModel
+            var workOrderModel = new WorkOrderModel
             {
-                WorkOrders = workOrders
+                WorkOrders = workOrders,
+                Durations = durations,
+                TotalDurations = totalDurations,
+                GeneralTotalDuration = generalTotalDurations
             };
-            return Ok(workOrderList);
+            return Ok(workOrderModel);
         }
     }
 }

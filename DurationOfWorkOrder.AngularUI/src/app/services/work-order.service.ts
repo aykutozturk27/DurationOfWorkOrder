@@ -11,8 +11,8 @@ export class WorkOrderService {
 
   constructor(private httpClient: HttpClient) {}
 
-  getWorkOrderWithDurations(): Observable<WorkOrderModel[]> {
+  getWorkOrderWithDurations(): Observable<WorkOrderModel> {
     let newPath = this.apiUrl + 'GetWorkOrderWithDurations';
-    return this.httpClient.get<WorkOrderModel[]>(newPath);
+    return this.httpClient.get<WorkOrderModel>(newPath);
   }
 }

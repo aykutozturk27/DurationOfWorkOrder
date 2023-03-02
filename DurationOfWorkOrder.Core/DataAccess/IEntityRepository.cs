@@ -7,5 +7,8 @@ namespace DurationOfWorkOrder.Core.DataAccess
     {
         List<T> GetList(List<T> entities, Expression<Func<T, bool>> filter = null);
         T Get(List<T> entities, Expression<Func<T, bool>> filter);
+
+        Task<List<T>> GetListAsync(List<T> entities, Expression<Func<T, bool>> filter = null);
+        Task<T> GetAsync(List<T> entities, Expression<Func<T, bool>> filter);
     }
 }

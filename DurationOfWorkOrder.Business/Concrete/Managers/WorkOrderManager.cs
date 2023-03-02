@@ -15,56 +15,63 @@ namespace DurationOfWorkOrder.Business.Concrete.Managers
             {
                 new WorkOrder() { Id = 1, DurationName = "Mola", WorkOrderCode = "1101",
                     DurationStart = new DateTime(2017,1,1,10,0,0),DurationEnd = new DateTime(2017,1,1,10,10,0) },
-                new WorkOrder() { Id = 2, DurationName = "Arıza", WorkOrderCode = "1102",
+                new WorkOrder() { Id = 2, DurationName = "Arıza", WorkOrderCode = "1101",
                     DurationStart = new DateTime(2017,1,1,10,30,0),DurationEnd = new DateTime(2017,1,1,11,0,0) },
-                new WorkOrder() { Id = 3, DurationName = "Mola", WorkOrderCode = "1103",
+                new WorkOrder() { Id = 3, DurationName = "Mola", WorkOrderCode = "1101",
                     DurationStart = new DateTime(2017,1,1,12,0,0),DurationEnd = new DateTime(2017,1,1,12,30,0) },
-                new WorkOrder() { Id = 4, DurationName = "Mola", WorkOrderCode = "1104",
+                new WorkOrder() { Id = 4, DurationName = "Mola", WorkOrderCode = "1101",
                     DurationStart = new DateTime(2017,1,1,14,0,0),DurationEnd = new DateTime(2017,1,1,14,10,0) },
-                new WorkOrder() { Id = 5, DurationName = "Setup", WorkOrderCode = "1105",
+                new WorkOrder() { Id = 5, DurationName = "Setup", WorkOrderCode = "1101",
                     DurationStart = new DateTime(2017,1,1,15,0,0),DurationEnd = new DateTime(2017,1,1,16,30,0) },
-                new WorkOrder() { Id = 6, DurationName = "Mola", WorkOrderCode = "1106",
+                new WorkOrder() { Id = 6, DurationName = "Mola", WorkOrderCode = "1101",
                     DurationStart = new DateTime(2017,1,1,18,0,0),DurationEnd = new DateTime(2017,1,1,18,10,0) },
-                new WorkOrder() { Id = 7, DurationName = "Mola", WorkOrderCode = "1107",
+                new WorkOrder() { Id = 7, DurationName = "Mola", WorkOrderCode = "1101",
                     DurationStart = new DateTime(2017,1,1,20,0,0),DurationEnd = new DateTime(2017,1,1,20,30,0) },
-                new WorkOrder() { Id = 8, DurationName = "Mola", WorkOrderCode = "1108",
+                new WorkOrder() { Id = 8, DurationName = "Mola", WorkOrderCode = "1101",
                     DurationStart = new DateTime(2017,1,1,22,0,0),DurationEnd = new DateTime(2017,1,1,22,10,0) },
-                new WorkOrder() { Id = 9, DurationName = "Arge", WorkOrderCode = "1109",
-                    DurationStart = new DateTime(2017,1,1,23,0,0),DurationEnd = new DateTime(2017,1,1,8,30,0) },
-                new WorkOrder() { Id = 10, DurationName = "Mola", WorkOrderCode = "1110",
+                new WorkOrder() { Id = 9, DurationName = "Arge", WorkOrderCode = "1101",
+                    DurationStart = new DateTime(2017,1,1,23,0,0),DurationEnd = new DateTime(2017,1,2,8,30,0) },
+                new WorkOrder() { Id = 10, DurationName = "Mola", WorkOrderCode = "1101",
                     DurationStart = new DateTime(2017,1,2,10,0,0),DurationEnd = new DateTime(2017,1,2,10,10,0) },
-                new WorkOrder() { Id = 11, DurationName = "Mola", WorkOrderCode = "1111",
+                new WorkOrder() { Id = 11, DurationName = "Mola", WorkOrderCode = "1101",
                     DurationStart = new DateTime(2017,1,2,12,0,0),DurationEnd = new DateTime(2017,1,2,12,30,0) },
-                new WorkOrder() { Id = 12, DurationName = "Arıza", WorkOrderCode = "1112",
+                new WorkOrder() { Id = 12, DurationName = "Arıza", WorkOrderCode = "1101",
                     DurationStart = new DateTime(2017,1,2,13,0,0),DurationEnd = new DateTime(2017,1,2,13,45,0) },
-                new WorkOrder() { Id = 13, DurationName = "Mola", WorkOrderCode = "1113",
+                new WorkOrder() { Id = 13, DurationName = "Mola", WorkOrderCode = "1101",
                     DurationStart = new DateTime(2017,1,2,14,0,0),DurationEnd = new DateTime(2017,1,2,14,10,0) },
-                new WorkOrder() { Id = 14, DurationName = "Mola", WorkOrderCode = "1114",
+                new WorkOrder() { Id = 14, DurationName = "Mola", WorkOrderCode = "1101",
                     DurationStart = new DateTime(2017,1,2,18,0,0),DurationEnd = new DateTime(2017,1,2,18,10,0) },
-                new WorkOrder() { Id = 15, DurationName = "Arge", WorkOrderCode = "1115",
-                    DurationStart = new DateTime(2017,1,2,20,0,0),DurationEnd = new DateTime(2017,1,2,2,10,0) },
-                new WorkOrder() { Id = 16, DurationName = "Mola", WorkOrderCode = "1116",
+                new WorkOrder() { Id = 15, DurationName = "Arge", WorkOrderCode = "1101",
+                    DurationStart = new DateTime(2017,1,2,20,0,0),DurationEnd = new DateTime(2017,1,3,2,10,0) },
+                new WorkOrder() { Id = 16, DurationName = "Mola", WorkOrderCode = "1101",
                     DurationStart = new DateTime(2017,1,3,4,0,0),DurationEnd = new DateTime(2017,1,3,4,30,0) },
-                new WorkOrder() { Id = 17, DurationName = "Setup", WorkOrderCode = "1117",
+                new WorkOrder() { Id = 17, DurationName = "Setup", WorkOrderCode = "1101",
                     DurationStart = new DateTime(2017,1,3,6,0,0),DurationEnd = new DateTime(2017,1,3,9,30,0) },
-                new WorkOrder() { Id = 18, DurationName = "Mola", WorkOrderCode = "1118",
+                new WorkOrder() { Id = 18, DurationName = "Mola", WorkOrderCode = "1101",
                     DurationStart = new DateTime(2017,1,3,10,0,0),DurationEnd = new DateTime(2017,1,3,10,10,0) },
-                new WorkOrder() { Id = 19, DurationName = "Mola", WorkOrderCode = "1119",
+                new WorkOrder() { Id = 19, DurationName = "Mola", WorkOrderCode = "1101",
                     DurationStart = new DateTime(2017,1,3,12,0,0),DurationEnd = new DateTime(2017,1,3,12,30,0) },
-                new WorkOrder() { Id = 20, DurationName = "Mola", WorkOrderCode = "1120",
+                new WorkOrder() { Id = 20, DurationName = "Mola", WorkOrderCode = "1101",
                     DurationStart = new DateTime(2017,1,3,14,0,0),DurationEnd = new DateTime(2017,1,3,14,10,0) },
-                new WorkOrder() { Id = 21, DurationName = "Arıza", WorkOrderCode = "1121",
+                new WorkOrder() { Id = 21, DurationName = "Arıza", WorkOrderCode = "1101",
                     DurationStart = new DateTime(2017,1,3,15,0,0),DurationEnd = new DateTime(2017,1,3,18,45,0) },
-                new WorkOrder() { Id = 22, DurationName = "Mola", WorkOrderCode = "1122",
+                new WorkOrder() { Id = 22, DurationName = "Mola", WorkOrderCode = "1101",
                     DurationStart = new DateTime(2017,1,3,20,0,0),DurationEnd = new DateTime(2017,1,3,20,30,0) },
-                new WorkOrder() { Id = 23, DurationName = "Mola", WorkOrderCode = "1123",
+                new WorkOrder() { Id = 23, DurationName = "Mola", WorkOrderCode = "1101",
                     DurationStart = new DateTime(2017,1,3,22,0,0),DurationEnd = new DateTime(2017,1,3,22,10,0) }
             };
         }
 
         public List<WorkOrder> GetAll()
         {
-            return _workOrderDal.GetList(_workOrders);
+            var workOrderList = _workOrderDal.GetList(_workOrders);
+            return workOrderList;
+        }
+
+        public async Task<List<WorkOrder>> GetAllAsync()
+        {
+            var workOrderList = await _workOrderDal.GetListAsync(_workOrders);
+            return workOrderList;
         }
     }
 }

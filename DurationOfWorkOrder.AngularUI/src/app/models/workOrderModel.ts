@@ -1,5 +1,8 @@
 import { WorkOrder } from "./workOrder";
 
-export interface WorkOrderModel{
-    workOrders: WorkOrder[]
+export class WorkOrderModel{
+    WorkOrders : WorkOrder[] = [];
+    Durations : number[] = [];
+    TotalDurations : number[] = [];
+    GeneralTotalDuration : number = 0;
 }

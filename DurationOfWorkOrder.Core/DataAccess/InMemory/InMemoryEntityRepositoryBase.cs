@@ -11,9 +11,19 @@ namespace DurationOfWorkOrder.Core.DataAccess.InMemory
             throw new NotImplementedException();
         }
 
+        public Task<T> GetAsync(List<T> entities, Expression<Func<T, bool>> filter)
+        {
+            throw new NotImplementedException();
+        }
+
         public List<T> GetList(List<T> entities, Expression<Func<T, bool>> filter = null)
         {
             return entities;
+        }
+
+        public async Task<List<T>> GetListAsync(List<T> entities, Expression<Func<T, bool>> filter = null)
+        {
+            return await Task.FromResult(entities);
         }
     }
 }

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { WorkOrder } from 'src/app/models/workOrder';
 import { WorkOrderModel } from 'src/app/models/workOrderModel';
 import { WorkOrderService } from 'src/app/services/work-order.service';
 
@@ -9,9 +8,11 @@ import { WorkOrderService } from 'src/app/services/work-order.service';
   styleUrls: ['./work-order.component.css']
 })
 export class WorkOrderComponent implements OnInit {
-  workOrders : WorkOrderModel[] = [];
+  workOrders : any;
   durations : number[] = [];
-  totalDurations : number[] = []; 
+  totalDurations : number[] = [];
+  workOrderCodes : string[] = []; 
+  generalTotalDurations : number = 0;
   
   constructor(
     private workOrderService : WorkOrderService
@@ -21,11 +22,16 @@ export class WorkOrderComponent implements OnInit {
     this.getWorkOrderWithDurations();
   }
 
-  getWorkOrderWithDurations(){
+  async getWorkOrderWithDurations(){
     this.workOrderService.getWorkOrderWithDurations().subscribe((response) => {
-      this.workOrders.forEach(workOrder => {
-        workOrders = response
-      })
+      this.workOrders = response.WorkOrders;
+      this.durations = response.Durations;
+      this.totalDurations = response.TotalDurations;
+      this.generalTotalDurations = response.GeneralTotalDuration;
+      //this.workOrderCodes = [... new Set(this.workOrders.map(x=>x.workOrderCode))];
+      // this.durations = [... new Set(this.workOrders.map(x=>x.durations))];
+      // this.totalDurations = [... new Set(this.workOrders.map(x=>x.totalDurations))];
+      console.log(response);
     })
   }
 }
