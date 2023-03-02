@@ -1,0 +1,16 @@
+<table class="table table-responsive table-bordered table-hover table-light">
+  <thead>
+    <tr>
+      <th>İşEmri</th>
+      <th *ngFor="let workOrder of workOrders">{{ workOrder.durationName }}</th>
+      <th>Toplam</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let workOrder of workOrders">
+      <td>{{ workOrder.workOrderCode }}</td>
+      <!-- <td>{{ workOrder.durations }}</td>
+      <td>{{ workOrder.totalDurations }}</td> -->
+    </tr>
+  </tbody>
+</table>

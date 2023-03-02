@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33403.182
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DurationOfWorkOrder.Entities", "DurationOfWorkOrder.Entities\DurationOfWorkOrder.Entities.csproj", "{9949E273-BF6D-477F-BEF4-6DC8AA1D778B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DurationOfWorkOrder.Entities", "DurationOfWorkOrder.Entities\DurationOfWorkOrder.Entities.csproj", "{9949E273-BF6D-477F-BEF4-6DC8AA1D778B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DurationOfWorkOrder.Core", "DurationOfWorkOrder.Core\DurationOfWorkOrder.Core.csproj", "{D0E97AA0-E3D6-49DC-954D-D76546EB41C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DurationOfWorkOrder.Core", "DurationOfWorkOrder.Core\DurationOfWorkOrder.Core.csproj", "{D0E97AA0-E3D6-49DC-954D-D76546EB41C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DurationOfWorkOrder.DataAccess", "DurationOfWorkOrder.DataAccess\DurationOfWorkOrder.DataAccess.csproj", "{E8853F4E-B6ED-425C-821C-AC36D573D897}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DurationOfWorkOrder.DataAccess", "DurationOfWorkOrder.DataAccess\DurationOfWorkOrder.DataAccess.csproj", "{E8853F4E-B6ED-425C-821C-AC36D573D897}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DurationOfWorkOrder.Business", "DurationOfWorkOrder.Business\DurationOfWorkOrder.Business.csproj", "{0334207C-6B1A-4D4D-BA88-9DED195BE652}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DurationOfWorkOrder.Business", "DurationOfWorkOrder.Business\DurationOfWorkOrder.Business.csproj", "{0334207C-6B1A-4D4D-BA88-9DED195BE652}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DurationOfWorkOrder.MvcWebUI", "DurationOfWorkOrder.MvcWebUI\DurationOfWorkOrder.MvcWebUI.csproj", "{3C8E5F3A-071F-4383-91F1-D9DBA00106D3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DurationOfWorkOrder.WebAPI", "DurationOfWorkOrder.WebAPI\DurationOfWorkOrder.WebAPI.csproj", "{4DE792F8-7992-44A5-97CF-AB5C651EF42E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,10 @@ Global
 		{0334207C-6B1A-4D4D-BA88-9DED195BE652}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0334207C-6B1A-4D4D-BA88-9DED195BE652}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0334207C-6B1A-4D4D-BA88-9DED195BE652}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3C8E5F3A-071F-4383-91F1-D9DBA00106D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3C8E5F3A-071F-4383-91F1-D9DBA00106D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3C8E5F3A-071F-4383-91F1-D9DBA00106D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3C8E5F3A-071F-4383-91F1-D9DBA00106D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DE792F8-7992-44A5-97CF-AB5C651EF42E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DE792F8-7992-44A5-97CF-AB5C651EF42E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DE792F8-7992-44A5-97CF-AB5C651EF42E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DE792F8-7992-44A5-97CF-AB5C651EF42E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
