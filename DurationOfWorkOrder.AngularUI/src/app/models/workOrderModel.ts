@@ -1,8 +1,8 @@
 import { WorkOrder } from "./workOrder";
 
 export class WorkOrderModel{
-    WorkOrders : WorkOrder[] = [];
-    Durations : number[] = [];
-    TotalDurations : number[] = [];
-    GeneralTotalDuration : number = 0;
+    workOrders : WorkOrder[] = [];
+    durations : number[] = [];
+    totalDurations : number[] = [];
+    generalTotalDuration : number = 0;
 }

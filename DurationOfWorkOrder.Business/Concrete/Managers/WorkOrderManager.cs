@@ -58,7 +58,9 @@ namespace DurationOfWorkOrder.Business.Concrete.Managers
                 new WorkOrder() { Id = 22, DurationName = "Mola", WorkOrderCode = "1101",
                     DurationStart = new DateTime(2017,1,3,20,0,0),DurationEnd = new DateTime(2017,1,3,20,30,0) },
                 new WorkOrder() { Id = 23, DurationName = "Mola", WorkOrderCode = "1101",
-                    DurationStart = new DateTime(2017,1,3,22,0,0),DurationEnd = new DateTime(2017,1,3,22,10,0) }
+                    DurationStart = new DateTime(2017,1,3,22,0,0),DurationEnd = new DateTime(2017,1,3,22,10,0) },
+                new WorkOrder() { Id = 24, DurationName = "Mola", WorkOrderCode = "1102",
+                    DurationStart = new DateTime(2017,1,3,23,0,0),DurationEnd = new DateTime(2017,1,3,23,10,0) }
             };
         }
 

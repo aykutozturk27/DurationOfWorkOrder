@@ -7,13 +7,14 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td *ngFor="let workOrder of workOrders">{{ workOrder.WorkOrderCode }} </td>
+    <tr *ngFor="let workOrderCode of workOrderCodes">
+      <td> {{ workOrderCode }} </td>
       <td *ngFor="let duration of durations">{{ duration }}</td>
-      <td *ngFor="let totalDuration of totalDurations">{{ totalDuration }}</td>
+      <td>{{generalTotalDurations}}</td>
     </tr>
     <tr>
       <td>Toplam</td>
+      <td *ngFor="let totalDuration of totalDurations">{{ totalDuration }}</td>
     </tr>
   </tbody>
 </table>
